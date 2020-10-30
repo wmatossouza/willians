@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Specs - Frontend Test</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href = "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel = "stylesheet">
+</head>
+<body>
+<div class="container">
+	<div class="col-md-12">
+		<div class="panel panel-primary">
+		  	<div class="panel-heading" id="panelSearch" style="font-size: 20px; height: 200px">
+		  		<div class="row" id="labelSearch" style="margin-top: 50px; display: block;">
+		  			<center><label>Wheather In Your City</label></center>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">	
+						<div class="col-md-2" id="btnReturn" style="display: none">
+							<button class="btn btn-default " onclick="location.reload();">Return</button>
+						</div>
+						<div class="col-md-8">
+							<input class="form-control" type="text" id="city">
+						</div>
+						<div class="col-md-2">
+							<button class="btn btn-default" onclick="searchCity();">Search</button>
+						</div>
+					</div>
+				</div>
+		  	</div>	
+		  	<div class="panel-body" id='body' style="font-size: 20px; height: 600px">
+		  		<div class="row col-md-6 col-md-offset-3">
+		  			<center>
+		  				<div class="panel-heading" id="headWather" style="font-size: 30px; height: 130px;display: none;"></div>	
+		  			</center>	
+		  		</div>
+		  		<div class="row col-md-8 col-md-offset-2 panel panel-default" id='cards' style="display: none"></div>
+			  		
+		  		<div class="row col-md-10 col-md-offset-1" id="panelResults" style="display: none">
+		  			<div class="panel panel-default">
+						<div class="panel-body" id="resultsBody">
+			  				
+				  	</div>	
+				  	</div>
+			  	</div>	
+		  		</div>
+		  	</div>	
+		</div>
+	</div>	
+</div>
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/FrontendTest.js"></script>
+
